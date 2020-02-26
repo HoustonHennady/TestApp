@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/categoryFragment">
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.myapplication.Fragment.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_categoryFragment_to_secondCategoryFragment"
+            app:destination="@+id/secondCategoryFragment"
+            app:launchSingleTop="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.myapplication.Fragment.SecondCategoryFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_second_category" />
+    <fragment
+        android:id="@+id/checkedFragment"
+        android:name="com.example.myapplication.ui.Category.CheckedFragment"
+        android:label="fragment_checked"
+        tools:layout="@layout/fragment_checked" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.myapplication.Fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/secondCategoryFragment"
+        android:name="com.example.myapplication.Fragment.SecondCategoryFragment"
+        android:label="fragment_second_category"
+        tools:layout="@layout/fragment_second_category" />
+</navigation>
